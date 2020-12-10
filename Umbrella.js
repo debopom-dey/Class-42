@@ -7,7 +7,7 @@ class Umbrella{
 
     this.width=width
     this.height=height;
-    this.image=loadImage("Bruce/walking_1.png")
+    this.image=loadImage("walking_1.png")
     this.body=Bodies.rectangle(x,y,width,height,options);
    
     World.add(world,this.body)
