@@ -6,6 +6,7 @@ const Body = Matter.Body;
 var umbrella,thunder
 var maxDrops=100
 var drops=[]
+var thunderCreatedFrame=0;
 var thunder1,thunder2,thunder3,thunder4
 function preload()
 {
