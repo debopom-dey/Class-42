@@ -2,17 +2,18 @@ class Drop{
     constructor(x,y){
     var options={
         restitution:0.1,
-        friction:0.001,
+        friction:0.001
     }
     
     this.rain=Bodies.circle(x,y,5,options);
     this.r=5;
-  
-    World.add(world,this.rain)
+    World.add(world,this.rain);
     }
+    
     display(){
     var pos= this.rain.position;
-    ellipseMode(RADIUS);
+    fill("blue")
+    ellipseMode(CENTER);
     ellipse(pos.x,pos.y,this.r,this.r)
     pop();
     
